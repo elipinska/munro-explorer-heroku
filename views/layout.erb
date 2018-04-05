@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Munro Explorer</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/nav.css">
+    <link rel="stylesheet" href="/styles/tables.css">
+    <link rel="stylesheet" href="/styles/buttons.css">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar">
+      <button class="navbtn"><a class="home" href="/">Home</a></button>
+      <div class="dropdown">
+        <button class="dropbtn"><a href="/hikers">Hikers</a></button>
+        <div class="dropdown-content">
+          <a href="/hikers">All hikers</a>
+          <a href="/hikers/new">New hiker</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"><a href="/munros">Munros</a></button>
+        <div class="dropdown-content">
+          <a href="/munros">All munros</a>
+          <a href="/munros/new">New munro</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"><a href="/hikes">Hikes</a></button>
+        <div class="dropdown-content">
+          <a href="/hikes">All hikes</a>
+          <a href="/hikes/new">New hike</a>
+        </div>
+      </div>
+      <button class="navbtn"><a href="/about">About</a></button>
+    </nav>
+
+    <div class="page">
+      <%= yield %>
+    </div>
+
+  </body>
+</html>

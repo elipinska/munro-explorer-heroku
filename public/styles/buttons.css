@@ -1,0 +1,44 @@
+.editbtn a {
+  text-decoration: none;
+  cursor: default;
+}
+
+.profile-column button {
+  width: 100%;
+}
+
+.submit-btn {
+  margin: 10px 4px;
+  padding: 10px;
+  font-size: 1.3rem;
+  background-color: rgb(24, 142, 96);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: rgb(17, 109, 58);
+}
+
+.dropbtn, .home, .navbtn {
+    background-color: rgb(24, 142, 96);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+button.dropbtn a, button.navbtn a {
+  text-decoration: none;
+  color: white;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(17, 109, 58);
+}

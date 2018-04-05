@@ -1,0 +1,40 @@
+<div class="centered-display">
+  <div class="new-form">
+
+    <h1>Edit hike</h1>
+
+    <form method="post" action="/hikes/<%=@hike.id%>">
+
+      <div class="question-field">
+        <div class="form-content">
+          <div class="form-question">
+          <label for="hiker-id">Hiker:</label>
+          <select id="hiker-id" name="hiker_id">
+            <% for hiker in @hikers %>
+            <option value="<%=hiker.id%>" <%= "selected" if (hiker.id.to_i == @hike.hiker_id.to_i) %>><%=hiker.full_name%></option>
+            <% end %>
+          </select>
+        </div>
+
+          <div class="form-question">
+          <label for="munro-id">Munro:</label>
+          <select id="munro-id" name="munro_id">
+            <% for munro in @munros %>
+            <option value="<%=munro.id%>" <%= "selected" if (munro.id.to_i == @hike.munro_id.to_i) %>><%=munro.name%></option>
+            <% end %>
+          </select>
+        </div>
+
+          <div class="form-question">
+            <p class="error"><%=@error if @error%></p>
+          <label for="date">Date:</label>
+          <input id ="date" type="date" name="date" value="<%= Date.parse(@hike.date)%>"/>
+        </div>
+        </div>
+        <img class="form-img" src="/images/hike.png" alt="mountain icon">
+      </div>
+      <button class="submit-btn" type='submit'>Update</button>
+
+    </form>
+  </div>
+</div>

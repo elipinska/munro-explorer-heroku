@@ -1,0 +1,28 @@
+<div class="centered-display">
+  <div class="new-form">
+    <h1>Edit munro entry</h1>
+    <form method="post" action="/munros/<%=@munro.id%>">
+      <div class="question-field">
+        <div class="form-content">
+          <div class="form-question">
+            <label for="name">Name:</label>
+            <input id ="name" type="text" name="name" value="<%=@munro.name%>"/>
+          </div>
+
+          <div class="form-question">
+            <label for="region">Region:</label>
+            <input id ="region" type="text" name="region" value="<%=@munro.region%>"/>
+          </div>
+
+          <div class="form-question">
+            <label for="altitude">Altitude (in meters):</label>
+            <input id ="altitude" type="number" name="altitude" value="<%=@munro.altitude%>"/>
+          </div>
+        </div>
+        <img class="form-img" src="/images/munro.png" alt="mountain icon">
+      </div>
+      <button class="submit-btn" type='submit'>Update</button>
+
+    </form>
+  </div>
+</div>

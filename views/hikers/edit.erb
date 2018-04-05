@@ -1,0 +1,33 @@
+<div class="centered-display">
+  <div class="new-form">
+    <h1>Edit hiker</h1>
+    <form method="post" action="/hikers/<%=@hiker.id%>">
+      <div class="question-field">
+        <div class="form-content">
+          <div class="form-question">
+            <label for="first-name">First name:</label>
+            <input id ="first-name" type="text" name="first_name" value="<%=@hiker.first_name%>"/>
+          </div>
+
+          <div class="form-question">
+            <label for="last-name">Last name:</label>
+            <input id ="last-name" type="text" name="last_name" value="<%=@hiker.last_name%>"/>
+          </div>
+
+          <div class="form-question">
+            <label for="date-of-birth">Date of birth:</label>
+            <input id ="date-of-birth" type="date" name="date_of_birth" value="<%= Date.parse(@hiker.date_of_birth) if @hiker.date_of_birth%>"/>
+          </div>
+
+          <div class="form-question">
+            <label for="munro-goal">Current goal:</label>
+            <input id ="munro-goal" type="number" name="munro_goal" value="<%=@hiker.munro_goal%>"/>
+          </div>
+        </div>
+        <img class="form-img" src="/images/hiker.png" alt="mountain icon">
+      </div>
+      <button class="submit-btn" type='submit'>Update</button>
+
+    </form>
+  </div>
+</div>

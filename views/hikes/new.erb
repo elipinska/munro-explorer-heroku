@@ -1,0 +1,41 @@
+<div class="centered-display">
+  <div class="new-form">
+    <h1>Record a new hike</h1>
+
+    <form action="/hikes" method="post">
+      <div class="question-field">
+        <div class="form-content">
+          <div class="form-question">
+            <label>
+              Select a hiker:
+              <select name="hiker_id">
+                <% for hiker in @hikers %>
+                <option value="<%= hiker.id %>"><%= hiker.full_name %></option>
+                <% end %>
+              </select>
+            </label>
+          </div>
+
+          <div class="form-question">
+            <label>
+              Select a munro:
+              <select name="munro_id">
+                <% for munro in @munros %>
+                <option value="<%= munro.id %>"><%= munro.name %></option>
+                <% end %>
+              </select>
+            </label>
+          </div>
+          <div class="form-question">
+            <p class="error"><%=@error if @error%></p>
+            <label for="date">Date:</label>
+            <input id ="date" type="date" name="date"/>
+          </div>
+        </div>
+        <img class="form-img" src="/images/hike.png" alt="mountain icon">
+      </div>
+      <button class="submit-btn" type='submit'>Go hiking!</button>
+    </form>
+
+  </div>
+</div>

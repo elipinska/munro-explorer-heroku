@@ -1,0 +1,37 @@
+nav {
+  background-color: rgb(24, 142, 96);
+  font-family: 'Lato', sans-serif;
+}
+
+.home {
+  margin-left: 30px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(249, 249, 249);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    right: 0;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(241, 241, 241);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

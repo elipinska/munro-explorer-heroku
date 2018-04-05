@@ -1,0 +1,46 @@
+.display-table {
+  margin-left: 100px;
+  font-size: 1.2rem;
+}
+
+.display-table th {
+  color: rgb(255,255,255);
+}
+
+.display-table th, td {
+  padding: 15px;
+}
+
+.display-table tr:first-of-type {
+  background-color: rgb(24, 142, 96);
+}
+
+.display-table tr {
+  background-color: rgb(214, 239, 210);
+}
+
+.display-table td:hover, tr:hover {
+  background-color: rgb(183, 219, 179);
+}
+
+.display-table td:nth-last-of-type(2), .display-table td:last-of-type {
+  background-color: rgb(243, 255, 242);
+}
+
+.display-table a {
+  text-decoration: none;
+}
+
+.profile-column table th {
+  text-align: center;
+  background-color: rgb(17, 109, 58);
+  color: rgb(255, 255, 255);
+}
+
+.profile-column table, .profile-column th, .profile-column td {
+  border: 2px solid rgb(17, 109, 58);
+}
+
+.profile-column table {
+    border-collapse: collapse;
+}

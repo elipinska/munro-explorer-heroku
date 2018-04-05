@@ -1,0 +1,40 @@
+<div class="main-container">
+  <h1>Most active hikers</h1>
+  <div class="row-centered">
+    <div class="display-box-highlight">
+      <h2>Most bagged munros</h2>
+      <div class="display-box-highlight-content">
+        <img src="images/trophy.png" alt="most active hiker icon">
+        <h3><a href="hikers/<%=@most_active.id %>"><%=@most_active.full_name%></a></h3>
+        <p>with a record <%=@most_active.unique_hikes_no%> bagged munros!</p>
+      </div>
+    </div>
+
+    <div class="display-box-highlight">
+      <h2>Most individual hikes</h2>
+      <div class="display-box-highlight-content">
+        <img src="images/trophy.png" alt="">
+        <h3><a href="hikers/<%=@most_indiv_hikes.id %>"><%=@most_indiv_hikes.full_name%></a></h3>
+        <p> with an impressive <%=@most_indiv_hikes.all_hikes.length%> hikes!</p>
+      </div>
+    </div>
+  </div>
+  <h1>All intrepid hikers:</h1>
+  <div class="row">
+    <% for hiker in @hikers %>
+    <div class="display-box">
+      <img src="images/hiker.png" alt="hiker icon">
+      <p><a href="hikers/<%= hiker.id %>"><%= hiker.full_name() %></a></p>
+
+      <p><%if hiker.unique_hikes_no == 1 %>
+        <%= "#{hiker.unique_hikes_no} munro"%>
+        <% else %>
+        <%= "#{hiker.unique_hikes_no} munros"%>
+        <% end %> bagged to date.</p>
+        <%unless hiker.unique_hikes_no < 1 %>
+        <p>Last seen on the slopes of <%=hiker.latest_hike()[0]['name']%> on <%=hiker.latest_hike[0]['date']%>.</p>
+        <%end%>
+      </div>
+      <% end %>
+    </div>
+  </div>

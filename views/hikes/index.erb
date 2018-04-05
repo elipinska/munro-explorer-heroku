@@ -1,0 +1,23 @@
+<div class="main-container">
+  <h1>All awesome hikes:</h1>
+    <div class="centered-display">
+      <table class="display-table">
+        <tr>
+          <th>Date</th>
+          <th>Hiker</th>
+          <th>Munro</th>
+        </tr>
+        <% for hike in @hikes %>
+        <tr class="data">
+          <td><%= hike.date %></td>
+          <td><a href="/hikers/<%=hike.hiker().id%>"><%= hike.hiker().full_name %></a></td>
+          <td><a href="/munros/<%=hike.munro().id%>"><%= hike.munro().name %></a></td>
+          <td class="btn-cell"><button class="editbtn"><a href="/hikes/<%= hike.id%>/edit">Edit</a></button>
+          </form></td>
+          <td class="btn-cell"><form action="/hikes/<%= hike.id %>/delete" method="post">
+            <input type='submit' value="Delete"></td>
+        </tr>
+        <% end %>
+     </table>
+   </div>
+</div>

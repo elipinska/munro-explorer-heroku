@@ -1,0 +1,250 @@
+body {
+  background-image: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body a {
+  color: rgb(0, 0, 0);
+}
+
+
+.main-logo {
+  max-width: 500px;
+}
+
+.page {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+
+.centered-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.new-form, .munro-display {
+  background-color: rgb(243, 255, 242);
+  width: 60%;
+  margin-top: 30px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  min-width: 300px;
+}
+
+.munro-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.hiker-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+}
+
+
+.profile-column {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  text-align: left;
+}
+
+
+.profile-column p, .profile-column h3 {
+  margin: 5px;
+}
+
+.profile-column ul {
+  padding-left: 20px;
+}
+
+.profile-column img {
+  align-self: center;
+}
+
+.new-form h1, .munro-display h1, .hiker-display h1 {
+  padding: 15px;
+  margin: 0px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(24, 142, 96);
+  display: flex;
+  flex-direction: column;
+}
+
+
+.form-content {
+  text-align: left;
+  font-size: 1.3rem;
+  padding: 15px;
+}
+
+.form-content input:last-of-type {
+  text-align: center;
+}
+
+.form-question {
+  margin: 10px 0px;
+}
+
+.new-form input, select {
+  font-size: 1.3rem;
+}
+
+.question-field {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+#name {
+  min-width: 250px;
+}
+
+#cookie {
+  max-width: 300px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.row-centered {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-container {
+  width: 80%;
+  margin: auto;
+  background-color: rgb(243, 255, 242);
+  border: thin solid gray;
+  border-top: none;
+  min-height: 100vh;
+  padding-bottom: 20px;
+}
+
+.main-container h1 {
+  padding: 20px 10px 5px 10px;
+  margin: 0;
+}
+
+
+.display-box, .display-box-highlight-content {
+    flex-basis: 20%;
+    min-width: 240px;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.display-box a, .display-box-highlight-content a {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.display-box {
+  background-color: rgb(209, 231, 207);
+  margin: 10px;
+}
+
+.display-box:hover {
+  background-color: rgb(183, 219, 179);
+}
+
+.display-box-highlight-content {
+  background-color: rgb(237, 222, 125);
+}
+
+.display-box-highlight-content:hover {
+  background-color: rgb(229, 211, 96);
+}
+
+.error {
+  color: rgb(225, 71, 74);
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.display-box-highlight h2 {
+  padding: 15px;
+  margin: 0px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(119, 109, 40);
+  display: flex;
+  flex-direction: column;
+}
+
+.display-box-highlight {
+  margin: 10px;
+}
+
+.hiker-display {
+  background-color: rgb(243, 255, 242);
+  width: 80%;
+  margin-top: 30px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  min-width: 300px;
+}
+
+.profile-column h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-column img {
+  margin: 15px 0px;
+  align-self: center;
+}
+
+.distinctions {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.person {
+  border-bottom: 2px ridge rgb(17, 109, 58);
+  border-top: 2px ridge rgb(17, 109, 58);
+  font-size: 1.2rem;
+  padding: 20px 0px;
+  margin-bottom: 20px;
+}
+
+.row {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.index-info {
+  margin: 0px 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.index-info img {
+  margin-top: 10px;
+  width: 60%;
+}
+
+.index-info p {
+  margin-top: 5px;
+  text-align: left;
+}
+
+.index-info h2 {
+  margin-bottom: 10px;
+}

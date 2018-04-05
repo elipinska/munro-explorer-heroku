@@ -1,0 +1,37 @@
+<div class="main-container">
+
+  <h1>Most popular munros</h1>
+
+  <div class="row-centered">
+    <div class="display-box-highlight">
+      <h2>Bagged by most hikers</h2>
+      <div class="display-box-highlight-content">
+        <img src="images/trophy-m.png" alt="popular munro icon">
+        <h3><a href="/munros/<%=@most_popular.id%>"><%=@most_popular.name%></a></h3>
+        <p>bagged by <%=@most_popular.all_hikers.length%> hikers.</p>
+      </div>
+    </div>
+
+    <div class="display-box-highlight">
+      <h2>Most individual visits</h2>
+      <div class="display-box-highlight-content">
+        <img src="images/trophy-m.png" alt="popular munro icon">
+         <h3><a href="/munros/<%=@most_indiv_visits.id%>"><%=@most_indiv_visits.name%></a></h3>
+        <p>visited <%=@most_indiv_visits.all_hikes.length%> times by <%=@most_indiv_visits.all_hikers.length%> hikers.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <h1>All munros to explore:</h1>
+  <div class="row">
+  <% for munro in @munros %>
+  <div class="display-box">
+    <img src="images/munro.png" alt="munro icon">
+    <p><a href="munros/<%=munro.id %>"><%= munro.name %></a></p>
+    <p>Region: <%= munro.region %></p>
+    <p>Altitude: <%= (munro.altitude).to_s %>m</p>
+  </div>
+  <% end %>
+</div>
+</div>

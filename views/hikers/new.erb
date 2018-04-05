@@ -1,0 +1,35 @@
+<div class="centered-display">
+  <div class="new-form">
+      <h1>Register a new hiker</h1>
+
+      <form method="post" action="/hikers">
+      <div class="question-field">
+        <div class="form-content">
+          <div class="form-question">
+            <label for="first-name">First name:</label>
+            <input id ="first-name" type="text" name="first_name"/>
+          </div>
+
+          <div class="form-question">
+            <label for="second-name">Last name:</label>
+            <input id ="second-name" type="text" name="last_name"/>
+          </div>
+
+          <div class="form-question">
+            <label for="age">Date of birth (optional):</label>
+            <input id ="age" type="date" name="date_of_birth"/>
+          </div>
+
+          <div class="form-question">
+            <label for="munro-goal">How many munros would you like to climb? (optional)</label>
+            <input style="width: 60px;" id ="munro-goal" type="number" name="munro_goal"/>
+          </div>
+
+        </div>
+      <img class="form-img" src="/images/hiker.png" alt="mountain icon">
+     </div>
+        <button class="submit-btn" type='submit'>Register</button>
+      </form>
+
+  </div>
+</div>
