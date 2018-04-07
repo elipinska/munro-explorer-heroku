@@ -47,7 +47,7 @@
           <%end%>
 
           <%unless @unique_hikes_no < 1 %>
-          <p>Last seen on the slopes of <%=@hiker.latest_hike()[0]['name']%> on <%=@hiker.latest_hike[0]['date']%>.</p>
+          <p>Last spotted on the slopes of <%=@hiker.latest_hike()[0]['name']%> on <%=@hiker.latest_hike[0]['date']%>.</p>
           <%end%>
 
           <% if @hiker.munro_goal != nil && @hiker.munro_goal > @hiker.unique_hikes_no%>
