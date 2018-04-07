@@ -1,9 +1,10 @@
 .editbtn a {
   text-decoration: none;
-  cursor: default;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
 }
 
-.profile-column button {
+.profile-column-1 button {
   width: 100%;
 }
 

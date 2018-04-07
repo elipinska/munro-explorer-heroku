@@ -1,21 +1,43 @@
 <div class="centered-display">
   <div class="hiker-display">
-    <h1>More about this hiker:</h1>
+    <h1>More about <%= @hiker.first_name + " " + @hiker.last_name %>:</h1>
     <div class="hiker-content">
 
-      <div class="profile-column">
-        <img src="/images/hiker.png" alt="hiker icon">
+      <div class="profile-column-1">
+        <div class="profile-img">
+          <img src="/images/hiker.png" alt="hiker icon">
+        </div>
 
-        <button class="editbtn"><a href="/hikers/<%= @hiker.id%>/edit">Edit</a></button>
+        <button class="editbtn submit-btn"><a href="/hikers/<%= @hiker.id%>/edit">Edit</a></button>
         <form action="/hikers/<%= @hiker.id %>/delete" method="post">
-          <button type='submit'>Delete</button>
+          <button class="submit-btn" type='submit'>Delete</button>
         </form>
+
+        <div class="distinctions">
+          <div class="distinctions">
+            <% if @hiker.id == Hiker.most_active.id%>
+            <h2>Distinction</h2>
+            <img src="/images/trophy.png" alt="trophy icon">
+            <p>Most bagged munros</p>
+            <%elsif @hiker.id == Hiker.most_indiv_hikes.id%>
+            <h2>Distinction</h2>
+            <img src="/images/trophy.png" alt="trophy icon">
+            <p>Most individual hikes</p>
+            <%end%>
+          </div>
+          <h2>Highest munro bagged:</h2>
+          <%unless @unique_hikes_no < 1%>
+          <h3><a href="/munros/<%=@hiker.highest_munro.id%>"%><%=@hiker.highest_munro.name if @hiker%></a></h3>
+          <h3><%=@hiker.highest_munro.altitude%>m</h3>
+          <%end%>
+          <img src="/images/hike.png" alt="">
+        </div>
 
 
 
       </div>
 
-      <div class="profile-column">
+      <div class="profile-column-2">
         <div class="person">
           <h3>Name: <%= @hiker.first_name + " " + @hiker.last_name %></h3>
 
@@ -61,27 +83,6 @@
             <%end%>
           </table>
           <%end%>
-        </div>
-        <div class="profile-column">
-          <div class="distinctions">
-            <h2>Highest munro bagged:</h2>
-            <%unless @unique_hikes_no < 1%>
-            <h3><a href="/munros/<%=@hiker.highest_munro.id%>"%><%=@hiker.highest_munro.name if @hiker%></a></h3>
-            <h3><%=@hiker.highest_munro.altitude%>m</h3>
-            <%end%>
-            <img src="/images/hike.png" alt="">
-          </div>
-          <div class="distinctions">
-            <% if @hiker.id == Hiker.most_active.id%>
-            <h2>Distinction</h2>
-            <img src="/images/trophy.png" alt="trophy icon">
-            <p>Most bagged munros</p>
-            <%elsif @hiker.id == Hiker.most_indiv_hikes.id%>
-            <h2>Distinction</h2>
-            <img src="/images/trophy.png" alt="trophy icon">
-            <p>Most individual hikes</p>
-            <%end%>
-          </div>
         </div>
       </div>
     </div>

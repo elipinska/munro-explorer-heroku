@@ -1,6 +1,7 @@
 body {
   background-image: url("/images/background.jpg");
   background-repeat: no-repeat;
+  background-size:cover;
   background-attachment: fixed;
 }
 
@@ -45,29 +46,36 @@ body a {
 
 .hiker-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   padding: 10px 20px;
 }
 
-
-.profile-column {
+.profile-column-1, .profile-column-2 {
   display: flex;
   padding: 10px;
   flex-direction: column;
   text-align: left;
 }
 
+.profile-column-1 {
+  flex-grow: 1;
+}
 
-.profile-column p, .profile-column h3 {
+.profile-column-2 {
+  flex-grow: 2;
+}
+
+
+.profile-column-1 p, .profile-column-1 h3, .profile-column-2 p, .profile-column-2 h3 {
   margin: 5px;
 }
 
-.profile-column ul {
+.profile-column-1 ul {
   padding-left: 20px;
 }
 
-.profile-column img {
+.profile-column-1 img, .profile-column-2 img {
   align-self: center;
 }
 
@@ -146,6 +154,7 @@ body a {
 .display-box, .display-box-highlight-content {
     flex-basis: 20%;
     min-width: 240px;
+    align-items: baseline;
     padding: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -200,12 +209,12 @@ body a {
   min-width: 300px;
 }
 
-.profile-column h2 {
+.profile-column-1 h2, .profile-column-2 h2 {
   text-align: center;
   margin-top: 20px;
 }
 
-.profile-column img {
+.profile-column-1 img {
   margin: 15px 0px;
   align-self: center;
 }
@@ -215,7 +224,12 @@ body a {
   margin-bottom: 20px;
 }
 
-.person {
+.profile-img {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.person, .munro {
   border-bottom: 2px ridge rgb(17, 109, 58);
   border-top: 2px ridge rgb(17, 109, 58);
   font-size: 1.2rem;

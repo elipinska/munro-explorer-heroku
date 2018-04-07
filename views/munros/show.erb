@@ -1,45 +1,46 @@
 <div class="centered-display">
   <div class="munro-display">
-    <h1>More about this munro:</h1>
+    <h1>More about this Munro:</h1>
     <div class="munro-content">
-      <div class="profile-column">
+      <div class="profile-column-1">
         <div class="distinctions">
         <% if @munro.id == Munro.most_popular.id%>
           <h3>Distinction</h3>
-          <img src="/images/trophy-m.png" alt="munro icon">
+          <img class="profile-img" src="/images/trophy-m.png" alt="munro icon">
           <p>Bagged by most hikers</p>
         <%elsif @munro.id == Munro.most_indiv_visits.id%>
           <h3>Distinction</h3>
-          <img src="/images/trophy-m.png" alt="munro icon">
+          <img  class="profile-img" src="/images/trophy-m.png" alt="munro icon">
           <p>Most visited munro</p>
 
         <%else%>
-          <img src="/images/munro.png" alt="munro icon">
+          <img class="profile-img" src="/images/munro.png" alt="munro icon">
         <%end%>
       </div>
-        <button class="editbtn"><a href="/munros/<%= @munro.id%>/edit">Edit</a></button>
+        <button class="editbtn submit-btn"><a href="/munros/<%= @munro.id%>/edit">Edit</a></button>
 
         <form action="/munros/<%= @munro.id %>/delete" method="post">
-          <button type='submit'>Delete</button>
+          <button class="submit-btn" type='submit'>Delete</button>
         </form>
       </div>
 
-      <div class="profile-column">
+      <div class="profile-column-2">
+        <div class="munro">
         <h3>Name: <%= @munro.name %></h3>
         <h3>Region: <%= @munro.region %></h3>
         <h3>Altitude: <%= @munro.altitude %>m</h3>
         <p>Conquered <%=@munro.all_hikes.length%> times by <%=@munro.all_hikers.length%> brave hikers.</p>
-
       </div>
+        <div>
+          <h3>Bagged by:</h3>
 
-      <div class="profile-column">
-        <h3>Bagged by:</h3>
+          <ul>
+            <% for hiker in @successful_hikers %>
+            <li><%=hiker.full_name%></li>
+            <% end %>
+          </ul>
 
-        <ul>
-          <% for hiker in @successful_hikers %>
-          <li><%=hiker.full_name%></li>
-          <% end %>
-        </ul>
+        </div>
 
       </div>
     </div>
