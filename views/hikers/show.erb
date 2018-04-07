@@ -8,9 +8,10 @@
           <img src="/images/hiker.png" alt="hiker icon">
         </div>
 
-        <button class="editbtn submit-btn"><a href="/hikers/<%= @hiker.id%>/edit">Edit</a></button>
+        <button class="editbtn submit-btn"><a href="/hikers/<%= @hiker.id%>/new-hike">New hike</a></button>
+        <button class="editbtn submit-btn"><a href="/hikers/<%= @hiker.id%>/edit">Edit profile</a></button>
         <form action="/hikers/<%= @hiker.id %>/delete" method="post">
-          <button class="submit-btn" type='submit'>Delete</button>
+          <button class="submit-btn" type='submit'>Delete profile</button>
         </form>
 
         <div class="distinctions">

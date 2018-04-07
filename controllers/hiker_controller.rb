@@ -27,6 +27,19 @@ get '/hikers/:id' do
   erb( :"hikers/show" )
 end
 
+get '/hikers/:id/new-hike' do
+  @hiker = Hiker.find_by_id(params['id'].to_i)
+  @munros = Munro.all
+  erb( :"hikers/new-hike" )
+end
+
+get '/hikers/:id/new-hike/error' do
+  @error = "Please complete the date field."
+  @hiker = Hiker.find_by_id(params['id'].to_i)
+  @munros = Munro.all
+  erb(:"/hikers/new-hike")
+end
+
 get '/hikers/:id/edit' do
   @hiker = Hiker.find_by_id(params['id'])
   erb(:"hikers/edit")
@@ -38,13 +51,35 @@ post '/hikers/:id' do
   redirect to "/hikers/#{params['id']}"
 end
 
+post 'hikers/:id/new-hike' do
+
+end
+
 post '/hikers/:id/delete' do
   hiker = Hiker.find_by_id(params[:id])
   hiker.delete()
   redirect to("/hikers")
 end
 
+post '/hikers/:id/new-hike' do
+  if params['date'] == ""
+    redirect to("/hikers/#{params['id']}/new-hike/error")
+  else
+    hike = Hike.new(params)
+    hike.save
+    hiker = Hiker.find_by_id(hike.hiker_id)
+    if hiker.munro_goal == hiker.unique_hikes_no
+      redirect to("/hikers/#{hiker.id}/goal_completed")
+    else
+      redirect to("/hikers/#{hiker.id}")
+    end
+  end
+  redirect to "/hikers/#{params['id']}"
+end
+
 get '/hikers/:id/goal_completed' do
   @hiker = Hiker.find_by_id(params['id'])
+  @hiker.munro_goal = nil
+  @hiker.update()
   erb(:"hikers/goal_completed")
 end
