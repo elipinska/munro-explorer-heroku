@@ -21,3 +21,5 @@
 - Add a difficulty level to each Munro; display the most difficult Munro for each hiker
 - View hikes by region
 - Allow hikers to have personal goals (e.g. climb 10 Munros)
+
+### Visit MunroExplorer at munro-explorer.herokuapp.com
