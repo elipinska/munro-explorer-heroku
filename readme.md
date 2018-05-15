@@ -22,4 +22,5 @@
 - View hikes by region
 - Allow hikers to have personal goals (e.g. climb 10 Munros)
 
-### Visit MunroExplorer at munro-explorer.herokuapp.com
+
+### MunroExplorer is now available online at http://munro-explorer.herokuapp.com
