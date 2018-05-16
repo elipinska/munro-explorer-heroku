@@ -7,7 +7,7 @@
 <ul>
   <li>build a web app using HTML, CSS (with Flexbox for responsive design) and Sinatra (web framework written in Ruby),</li>
   <li>practice CRUD actions (Create, Read, Update, Delete),</li>
-  <li>practice using the <a href="https://learn.co/lessons/sinatra-restful-routes-readme" target="_blank">7 RESTful routes</a>,</li>
+  <li>practice using the <a href="https://learn.co/lessons/sinatra-restful-routes-readme">7 RESTful routes</a>,</li>
   <li>implement a database using Postgres,</li>
   <li>practice good UX design through creating user stories, user journeys, proto-personas, wireframes, and using them throughout the project.</li>
   <li>deploy a web app</li>
