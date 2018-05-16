@@ -27,11 +27,19 @@
 
 ### Possible Extensions:
 
-- Display the highest Munro climbed for each hiker
-- Add a difficulty level to each Munro; display the most difficult Munro for each hiker
-- View hikes by region
-- Allow hikers to have personal goals (e.g. climb 10 Munros)
+<ul>
+  <li>Display the highest Munro climbed for each hiker</li>
+  <li>Add a difficulty level to each Munro; display the most difficult Munro for each hiker</li>
+  <li>View hikes by region</li>
+  <li>Allow hikers to have personal goals (e.g. climb 10 Munros)</li>
+</ul>
 
+### What NOT to use (as per original instructions for the project):
+<ul>
+  <li>Any Object Relational Mapper (e.g. ActiveRecord)</li>
+  <li>JavaScript. At all. Don't even think about it</li>
+  <li>Authentication</li>
+</ul>
 ### MunroExplorer is now available online at http://munro-explorer.herokuapp.com
 
 ![homepage](munro_explorer.png)
