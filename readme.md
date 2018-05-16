@@ -9,6 +9,7 @@
   <li>practice CRUD actions (Create, Read, Update, Delete),</li>
   <li>implement a database using Postgres,</li>
   <li>practice good UX design through creating user stories, user journeys, proto-personas, wireframes, and using them throughout the project.</li>
+  <li>deploy a web app</li>
 </ul>
 
 <h2>MVP:</h2>
