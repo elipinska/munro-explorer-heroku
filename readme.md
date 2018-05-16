@@ -3,7 +3,7 @@
 <p>This project aims to create an app allowing hikers to keep track of Munros (mountains in Scotland with a height over 3,000 feet) they climbed. Hikers should have individual profiles displaying basic information about them and stats of their walks. You should be able to browse through a list of Munros, as well as create new hikes and view them.</p>
 
 
-### Learning objectives:
+<h2>Learning objectives:</h2>
 - build a web app using HTML, CSS (with Flexbox for responsive design) and Sinatra (web framework written in Ruby),
 - practice CRUD actions (Create, Read, Update, Delete),
 - implement a database using Postgres,
