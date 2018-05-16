@@ -40,6 +40,7 @@
   <li>JavaScript. At all. Don't even think about it</li>
   <li>Authentication</li>
 </ul>
+
 ### MunroExplorer is now available online at http://munro-explorer.herokuapp.com
 
 ![homepage](munro_explorer.png)
