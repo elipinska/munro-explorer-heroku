@@ -1,6 +1,6 @@
 <h1>Munro bagging web app</h1>
 
-<p>This project aims to create an app allowing hikers to keep track of Munros (mountains in Scotland with a height over 3,000 feet) they climbed. Hikers should have individual profiles displaying basic information about them and stats of their walks. You should be able to browse through a list of Munros, as well as create new hikes and view them.</p>
+<p>A web app built using Ruby, Sinatra, Postgres, HTML and CSS over the course of six days (project 1 of CodeClan's 16-week software development course). For this project, I defined my own spec for an easy-to-use app allowing hikers to keep track of Munros (mountains in Scotland with a height over 3,000 feet) they climbed. I wanted hikers to have individual profiles displaying basic information about them and stats of their walks, as well as be able to browse through a list of Munros, create new hikes and view them as a list. During the project week, I spent the first two days considering user needs and app structure, I dedicated one day building my MVP, one day implementing extensions, and two days working on the visual design of the app.</p>
 
 
 <h2>Learning objectives:</h2>
