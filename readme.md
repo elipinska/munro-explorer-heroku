@@ -3,6 +3,12 @@
 <p>This project aims to create an app allowing hikers to keep track of Munros (mountains in Scotland with a height over 3,000 feet) they climbed. Hikers should have individual profiles displaying basic information about them and stats of their walks. You should be able to browse through a list of Munros, as well as create new hikes and view them.</p>
 
 
+### Learning objectives:
+- build a web app using HTML, CSS (with Flexbox for responsive design) and Sinatra (web framework written in Ruby),
+- practice CRUD actions (Create, Read, Update, Delete),
+- implement a database using Postgres,
+- practice good UX design through creating user stories, user journeys, proto-personas, wireframes, and using them throughout the project.
+
 <h2>MVP:</h2>
 
 <ul>
@@ -21,7 +27,6 @@
 - Add a difficulty level to each Munro; display the most difficult Munro for each hiker
 - View hikes by region
 - Allow hikers to have personal goals (e.g. climb 10 Munros)
-
 
 ### MunroExplorer is now available online at http://munro-explorer.herokuapp.com
 
