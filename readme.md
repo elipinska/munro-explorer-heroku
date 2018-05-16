@@ -1,4 +1,4 @@
-<h1>Munro bagging app</h1>
+<h1>Munro bagging web app</h1>
 
 <p>This project aims to create an app allowing hikers to keep track of Munros (mountains in Scotland with a height over 3,000 feet) they climbed. Hikers should have individual profiles displaying basic information about them and stats of their walks. You should be able to browse through a list of Munros, as well as create new hikes and view them.</p>
 
