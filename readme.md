@@ -4,10 +4,12 @@
 
 
 <h2>Learning objectives:</h2>
-- build a web app using HTML, CSS (with Flexbox for responsive design) and Sinatra (web framework written in Ruby),
-- practice CRUD actions (Create, Read, Update, Delete),
-- implement a database using Postgres,
-- practice good UX design through creating user stories, user journeys, proto-personas, wireframes, and using them throughout the project.
+<ul>
+  <li>build a web app using HTML, CSS (with Flexbox for responsive design) and Sinatra (web framework written in Ruby),</li>
+  <li>practice CRUD actions (Create, Read, Update, Delete),</li>
+  <li>implement a database using Postgres,</li>
+  <li>practice good UX design through creating user stories, user journeys, proto-personas, wireframes, and using them throughout the project.</li>
+</ul>
 
 <h2>MVP:</h2>
 
